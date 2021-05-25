@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.wrap {
+  /* 블록속성 */
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+/* a태그안에 모든 것들에 접근해서 아래와 같이 적용하겠다. */
+a {
+  /* inliner과 block속성 둘다 사용 */
+  /* inline속성은 width가 먹지 않는다. */
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    /* 위아래는 10px 양옆은 20px */
+    /* 만약 padding: 10px 20px 20px 20px 와같이 설정하면
+    위 -우측 -아래 - 왼쪽순으로 설정값 맵핑*/
+    padding: 10px 20px;
+    /* 모서리 둥글게 */
+    border-radius: 25px;
+    margin: 10px 0px;
+    background: #f1f1f1;
+    border: 1px solid #a1a1a1;
+    text-align: center;
+    text-decoration: none;
+    /* 글자의 굵기 아래는 굵게 사용 */
+    font-weight: bold;
+}
+/* a태그에 마우스를 올렸을때나 클릭했을때 */
+a:hover, a:active {
+    background: #999;
+}
